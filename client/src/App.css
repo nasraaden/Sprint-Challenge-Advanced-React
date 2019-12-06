@@ -1,33 +1,70 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.nav {
   align-items: center;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  padding: 0 3%;
+  background: whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dark-mode .nav {
+  background-color: #1F2022;
+  border: none;
+}
+
+.dark-mode_toggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 18px;
+  position: relative;
+  width: 38px;
+}
+
+.toggle {
+  background: #f68819;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.player-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.player-card{
+  width: 250px;
+  height: 180px;
+  margin: 2%;
+  text-align: center;
+  background: whitesmoke;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-mode .player-card{
+  background: #1F2022;
+}
+
+h1{
+  font-size: 1.8rem;
 }
