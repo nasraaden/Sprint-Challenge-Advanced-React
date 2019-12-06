@@ -1,4 +1,10 @@
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+    - You can use class components when you want to use React lifecycle methods that you wouldn't be able to use in functional components.
 - [ ] Name three lifecycle methods and their purposes.
+    - componentDidMount: once component is mounted, this method can be used for API requests, setting state
+    - componentDidUpdate: used for when there is a change in state, can also do axios requests here
+    - componentDidUnmount: death of the component, rarely used
 - [ ] What is the purpose of a custom hook?
+    - A custom hook allows you to do many things with a simple reusable piece of code. You can also write one hook to encompass multiple hooks.
 - [ ] Why is it important to test our apps?
+    - Tests are important to detect bugs, make sure our code is working properly, and build confidence in what we are making.
